@@ -6,6 +6,7 @@ fun main() {
 
     var dogObj = DogClass()
     dogObj.eat()
+    println("${dogObj.color}")
 
 
     var catObj = CatClass()
@@ -20,7 +21,7 @@ fun main() {
 
 //--------------animal class----------------------
 open class AnimalClass {
-    var color: String = " "
+    open var color: String = "White"
     open fun eat() {
         println("Animal eating")
     }
@@ -29,6 +30,7 @@ open class AnimalClass {
 //---------------dog class---------------------------
 class DogClass() : AnimalClass() {
     var breed: String = " "
+    override var color: String = "Black" // this is properties overriding
 
     fun bark() {
         println("Bark")
