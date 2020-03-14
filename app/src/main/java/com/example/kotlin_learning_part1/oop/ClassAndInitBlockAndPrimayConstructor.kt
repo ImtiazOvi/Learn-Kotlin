@@ -19,7 +19,7 @@ class Student(var name: String) { // this is class and also constructor simultan
     var id:Int = -1;
     // primary constructor body must written in init block
     init { // this is init block
-        println("Name is: $name")
+        println("Name is: $name and id is: $id")
     }
 
     //TODO :: can't declare secondary constructor without calling primary constructor
@@ -28,6 +28,7 @@ class Student(var name: String) { // this is class and also constructor simultan
         // this have own body no need init block
         // var is not allow in secondary constructor as a parameter
         // that's means can't declare property in secondary constructor unlike primary constructor (ex ; var name:String)
+        // the body of secondary constructor is called after init block
         this.id = id
 
     }
