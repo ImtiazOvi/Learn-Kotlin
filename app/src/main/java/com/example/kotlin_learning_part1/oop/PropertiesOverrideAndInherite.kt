@@ -35,6 +35,7 @@ class DogClass() : AnimalClass() {
     }
 
     override fun eat() {
+        super.eat() // super.eat() means it will execute super class eat method
         println("Dog eating")
     }
 }
@@ -48,6 +49,7 @@ class CatClass() : AnimalClass() {
     }
 
     override fun eat() {
+        super.eat() // super.eat() means it will execute super class eat method
         println("Cat eating")
     }
 }
