@@ -6,7 +6,6 @@ fun main(){
 
     myLambdaObj.addTwoNumber(2,3,{x,y -> x + y}) // lambda function
     // myLambdaObj.addTwoNumber(2,3){x,y -> x + y} // another way of lambda function
-
 }
 
 class MyLambda{
